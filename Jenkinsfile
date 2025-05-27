@@ -10,13 +10,13 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t demo-app .'
+                bat 'docker build -t demo-app .'
             }
         }
 
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p 3000:3000 demo-app'
+                bat 'docker run -d -p 3000:3000 demo-app'
             }
         }
     }
