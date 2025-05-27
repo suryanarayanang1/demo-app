@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/suryanarayanang1/jenkins-cicd-app.git34w'
+                git 'https://github.com/suryanarayanang1/demo-app.git'
             }
         }
 
